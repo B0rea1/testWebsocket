@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "module": "ESNext",
+        "target": "ESNext",
+        "moduleResolution": "Node",
+        "strict": true,
+        "baseUrl": "./",
+        "paths": {
+            "@node/*": ["./node_modules/*"],
+            "@core/*": ["./src/core/*"]
+        },
+        "typeRoots": ["@types", "./node_modules/@types"]
+    },
+    "include": ["src/**/*"],
+
+    "tsc-alias": {
+        "verbose": false,
+        "resolveFullPaths": true,
+        "watch": true,
+        "fileExtensions": {
+          "inputGlob": "{js,jsx,mjs}",
+          "outputCheck": ["js", "json", "jsx", "mjs"]
+        }
+      }
+}
+
+
+
+

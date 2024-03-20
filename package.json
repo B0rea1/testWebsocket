@@ -1,0 +1,25 @@
+{
+  "name": "ETF1223",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "build:watch": "tsc && (concurrently \"tsc -w\" \"tsc-alias -w\")"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/ws": "^8.5.10",
+    "axios": "^1.4.0",
+    "ccxt": "^4.0.3",
+    "ws": "^8.15.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "concurrently": "^8.2.2",
+    "tsc-alias": "^1.8.8"
+  }
+}
